@@ -1,7 +1,3 @@
-//
-// Created by karol on 15/10/2026.
-//
-
 #ifndef POO_HABITACIONES_H
 #define POO_HABITACIONES_H
 #include <iostream>
