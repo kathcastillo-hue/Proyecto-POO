@@ -7,9 +7,13 @@ using std::cout;
 using std:: string;
 class Habitaciones{
 private:
-    string estado;
-    int cant_disp;
-    double valor;
+    string estadoHabitacion estado; //Disponible, ocupada, limpieza o mantenimiento
+    int cant_disp;//# Habitaciones
+    //double valor;
+    int capacidad; //Capacidad de personas por habitación
+    string tipo; //Tipo de habitación
+    string vista; //¿...?
+    bool accesibilidad; //¿...?
 public:
     Habitaciones(string est, int c_disp, double val);
     string getEstado();
