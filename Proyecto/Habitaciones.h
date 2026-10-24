@@ -15,7 +15,8 @@ private:
     string vista; //¿...?
     bool accesibilidad; //¿...?
 public:
-    Habitaciones(string est, int c_disp, double val);
+    Habitaciones(string est, int c_disp, /*double val*/ int cap; string tip;
+    string view; bool acces);
     string getEstado();
     int getCantDisp(int num);
     double getValor();
