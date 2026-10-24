@@ -1,12 +1,11 @@
-//
-// Created by karol on 15/10/2026.
-//
+
 #include <iostream>
 #include "Habitaciones.h"
 using namespace std;
 
-    Habitaciones:: Habitaciones(string est, int c_disp, double val):estado(est), cant_disp(c_disp),
-    valor(val){}
+    Habitaciones:: Habitaciones(string est, int c_disp, /*double val*/ int cap; 
+    string tipo; string view; bool acces):estado(est), cant_disp(c_disp), 
+    capacidad(cap), tipo(tip), vista(view), accesibilidad(acces){}
         string getEstado(){
 
 
