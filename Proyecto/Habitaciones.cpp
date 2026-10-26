@@ -3,9 +3,9 @@
 #include "Habitaciones.h"
 using namespace std;
 
-    Habitaciones:: Habitaciones(string est, int c_disp, /*double val*/ int cap; 
-    string tipo; string view; bool acces):estado(est), cant_disp(c_disp), 
-    capacidad(cap), tipo(tip), vista(view), accesibilidad(acces){}
+    Habitaciones:: Habitaciones(string est, int cant, /*double val*/ int cap, 
+    string tipo, string view, bool acces):estado(est), cantidad(cant), 
+    capacidad(cap), /*val*/tipo(tip), vista(view), accesibilidad(acces){}
         string getEstado(){
            /* cout<<"Ingrese el estado de la habitación: "<<endl;
             cout<<"1.Disponible."<<"\n 2.Ocupada."<<"\n 3.En limpieza."<<
