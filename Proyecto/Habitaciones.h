@@ -3,21 +3,19 @@
 #define POO_HABITACIONES_H
 #include <iostream>
 #include <string>
-using std::cout;
-using std:: string;
 class Habitaciones{
 private:
-    string estadoHabitacion estado; //Disponible, ocupada, limpieza o mantenimiento
+    std::string estadoHabitacion estado; //Disponible, ocupada, limpieza o mantenimiento
     int cantidad;//# Habitaciones
     //double valor;
     int capacidad; //Capacidad de personas por habitación
-    string tipo; //Tipo de habitación
-    string vista; //¿...?
+    std::string tipo; //Tipo de habitación
+    std::string vista; //¿...?
     bool accesibilidad; //¿...?
 public:
-    Habitaciones(string est, int cant, /*double val*/ int cap; string tip;
-    string view; bool acces);
-    string getEstado();
+    Habitaciones(std::string est, int cant, /*double val*/ int cap, 
+    std::string tip, std::string view, bool acces);
+    std::string getEstado();
     int getCantDisp(int num);
     double getValor();
     void setDescuento(double descuento);
