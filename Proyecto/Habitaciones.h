@@ -4,7 +4,7 @@
 #include <string>
 class Habitaciones{
 private:
-    std::string estadoHabitacion estado; //Disponible, ocupada, limpieza o mantenimiento
+    std::string estado; //Disponible, ocupada, limpieza o mantenimiento
     int cantidad;//# Habitaciones
     //double valor;
     int capacidad; //Capacidad de personas por habitación
