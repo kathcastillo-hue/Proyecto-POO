@@ -6,7 +6,7 @@ using namespace std;
     Habitaciones:: Habitaciones(string est, int cant, /*double val*/ int cap, 
     string tipo, string view, bool acces):estado(est), cantidad(cant), 
     capacidad(cap), /*val*/tipo(tip), vista(view), accesibilidad(acces){}
-        string getEstado(){
+        string Habitaciones:: getEstado(){return estado;
            /* cout<<"Ingrese el estado de la habitación: "<<endl;
             cout<<"1.Disponible."<<"\n 2.Ocupada."<<"\n 3.En limpieza."<<
                 "\n 4.En mantenimiento"<<endl;
@@ -26,18 +26,6 @@ using namespace std;
                     break;
             */
         }
-        int getCantDisp(int num){
-            num=3;
-            /*if (num>0){
-                num=num-1;
-            }*/
-            /*for (int i=0;i<num;i++){
-                num-=i;
-            }*/
-        }
-
-        double getValor(){}
-        void setDescuento(double descuento){}
 
 int main() {
 
