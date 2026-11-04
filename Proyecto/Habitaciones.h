@@ -12,7 +12,7 @@ private:
     std::string vista; //¿...?
     bool accesibilidad; //¿...?
 public:
-    Habitaciones(std::string est, int id; int cant, int cap, std::string tip, 
+    Habitaciones(std::string est, int id, int cant, int cap, std::string tip, 
     std::string view, bool acces);
     std::string getEstado();
     bool Disponibilidad();
