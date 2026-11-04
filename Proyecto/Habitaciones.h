@@ -10,7 +10,7 @@ private:
     int capacidad; //Capacidad de personas por habitación
     std::string tipo; //Tipo de habitación
     std::string vista; //Vista de la habitación (mar, ciudad, selva)
-    bool accesibilidad; //¿...?
+    bool accesibilidad; //¿Apta para personas con movilidad reducida?
 public:
     Habitaciones(std::string est, int id, int cant, int cap, std::string tip, 
     std::string view, bool acces);
