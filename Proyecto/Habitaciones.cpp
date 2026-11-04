@@ -9,9 +9,10 @@ using namespace std;
     string Habitaciones:: getEstado(){return estado;}
     bool Habitaciones:: Disponibilidad(){
         if (cantidad<=0 || estado!="Disponible"){
-            cout<<"No hay habitaciones disponibles";
+            cout<<"No hay habitaciones disponibles"<<'\n';
             return false;
         }
+        cout<<"Habitaciones disponibles"<<'\n';
         return true;
     }
 
