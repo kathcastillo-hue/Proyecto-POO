@@ -8,7 +8,7 @@ using namespace std;
     vista(view), accesibilidad(acces){}
     string Habitaciones:: getEstado(){return estado;}
     bool Habitaciones:: Disponibilidad(){
-        if (cantidad<=0){
+        if (cantidad<=0 || estado!="Disponible"){
             cout<<"No hay habitaciones disponibles";
             return false;
         }
