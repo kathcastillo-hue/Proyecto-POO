@@ -4,14 +4,14 @@
 enum tipoGarantia{
   Deposito,
   Tarjeta,
-  Pregagado,
+  Prepagado,
 };
 
 enum estadoDeReserva{
-  Confirmada;
+  Confirmada,
   Cancelada,
   NoShow,
-}
+};
 class Reserva {
   int numReserva;
   int docHuesped;
@@ -22,10 +22,11 @@ class Reserva {
 public:
   Reserva(int numR, int docH, int idH, std::string start, std:: string end, 
   bool reservaG);
-  int NomReserva();
+  int NumReserva();
   int DocHuesped();
   int IdHabitacion();
+  std::string InicioReserva();
   std::string FinReserva();
-  bool reservaGrupal();
+  bool ReservaGrupal();
 };
 #endif //POO_RESERVA_H
