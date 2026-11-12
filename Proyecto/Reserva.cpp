@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Reserva.h"
 using namespace std;
-  Reserva::Reserva(int numR, int docH, int idH, string start, string end, 
+  Reserva::Reserva(tipoGarantia tipoG(tipG), estadoDeReserva estadoR(estR), int numR, int docH, int idH, string start, string end, 
   bool reservaG):numReserva(numR), docHuesped(docH), idHabitacion(idH), 
   inicioReserva(start), finReserva(end), reservaGrupal(reservaG){}
   int Reserva::NumReserva(){return numReserva; }
