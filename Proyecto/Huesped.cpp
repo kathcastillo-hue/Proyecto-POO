@@ -20,6 +20,6 @@ using namespace std;
     if (puntos>0 && puntos<=this->puntos){
         this->puntos-=puntos;
     }else{
-      cout<<"Cantidad invalida"<<'\n;
+      cout<<"Cantidad invalida"<<'\n';
     }
   }
