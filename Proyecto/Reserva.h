@@ -1,8 +1,8 @@
-#ifndef POO_RESERVA_H
+  #ifndef POO_RESERVA_H
 #define POO_RESERVA_H
 #include <string>
 
-enum tipoGarantia{
+enum tipoDeGarantia{
   Deposito,
   Tarjeta,
   Prepagado,
@@ -14,7 +14,7 @@ enum estadoDeReserva{
   NoShow,
 };
 class Reserva {
-  tipoGarantia tipoG;
+  tipoDeGarantia tipoG;
   estadoDeReserva estadoR;
   int numReserva;
   int docHuesped;
@@ -23,8 +23,10 @@ class Reserva {
   std::string finReserva;
   bool reservaGrupal;
 public:
-  Reserva(tipoGarantia tipG, estadoDeReserva estR, int numR, int docH, int idH, std::string start, std:: string end, 
+  Reserva(tipoDeGarantia tipG, estadoDeReserva estR, int numR, int docH, int idH, std::string start, std:: string end, 
   bool reservaG);
+  tipoDeGarantia TipoDeGarantia();
+  estadoDeReserva EstadoR();
   int NumReserva();
   int DocHuesped();
   int IdHabitacion();
