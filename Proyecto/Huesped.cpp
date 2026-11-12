@@ -13,13 +13,13 @@ using namespace std;
     if(puntos>0){
       this->puntos+=puntos;
     } else{
-      cout<<"Cantidad invalida";
+      cout<<"Cantidad invalida"<<'\n';
     }
   }
   void Huesped:: quitarPuntos(int puntos){
     if (puntos>0 && puntos<=this->puntos){
         this->puntos-=puntos;
     }else{
-      cout<<"Cantidad invalida";
+      cout<<"Cantidad invalida"<<'\n;
     }
   }
