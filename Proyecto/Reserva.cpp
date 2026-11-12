@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Reserva.h"
 using namespace std;
   Reserva::Reserva(int numR, int docH, int idH, string start, string end, 
   bool reservaG):numReserva(numR), docHuesped(docH), idHabitacion(idH), 
