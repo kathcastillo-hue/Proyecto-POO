@@ -21,10 +21,15 @@ using namespace std;
   estadoR=Cancelada;
   }
   void Reserva::aplicarNoShow(){
-    
+    if(estadoR==Confirmada){
+      estadoR==NoShow;
+    }
   }
   void Reserva::quitarNoShow(bool causaJust){
-    
+    if(estadoR==NoShow && causaJust){
+      estadoR==Confirmada;
+      return true;
+    }
   }
   bool Reserva::ReservaGrupal(){return reservaGrupal;}
 
