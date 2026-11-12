@@ -1,5 +1,5 @@
-
-
+#ifndef POO_RESERVA_H
+#define POO_RESERVA_H
 #include <string>
 enum tipoGarantia{
   Deposito,
@@ -28,3 +28,4 @@ public:
   std::string FinReserva();
   bool reservaGrupal();
 };
+#endif //POO_RESERVA_H
