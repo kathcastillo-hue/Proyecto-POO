@@ -19,7 +19,14 @@ using namespace std;
         cout<<"Habitaciones disponibles"<<'\n';
         return true;
     }
-
+     bool Habitaciones::getAccesibilidad(){ return accesibilidad;}
+    void Habitaciones::setEstado(string nuevoEstado){
+        estado=nuevoEstado;
+        cout<<nuevoEstado<<'\n';
+    }
+    void Habitaciones::nuevoMantenimiento(){
+        estado="En mantenimiento";
+    }
 int main() {
 
 
