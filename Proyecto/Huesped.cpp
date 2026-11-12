@@ -4,7 +4,8 @@
 using namespace std;
 
 
-  Huesped::Huesped(claseDeCliente c, int id, std::string name, int punto){}
+  Huesped::Huesped(claseDeCliente c, int id, std::string name, int punto): claseDeCliente(c),
+  identificacion(id), nombre(name), puntos(punto){}
   claseDeCliente Huesped::getClaseDeCliente(){ return cliente;}
   int Huesped:: getIdentificacion(){return identificacion;}
   void Huesped:: añadirPuntos(int puntos){
