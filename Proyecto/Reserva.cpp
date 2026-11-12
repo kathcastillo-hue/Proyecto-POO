@@ -16,7 +16,7 @@ using namespace std;
   void Reserva:: cambiarFechas(string start, string end){
     this->inicioReserva=start;
     this->finReserva=end;
-  }
+  }//Hacer un condicional para que no deje agendar antes del día actual
   void Reserva::cancelarReserva(){
   estadoR=Cancelada;
   }
