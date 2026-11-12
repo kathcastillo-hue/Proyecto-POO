@@ -35,7 +35,7 @@ public:
   void cambiarFechas( std::string start, std:: string end);
   void cancelarReserva();
   void aplicarNoShow();
-  void quitarNoShow();
+  void quitarNoShow(bool causaJust);
   bool ReservaGrupal();
 };
 #endif //POO_RESERVA_H
