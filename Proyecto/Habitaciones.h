@@ -23,8 +23,8 @@ public:
     std::string getVista();
     bool Disponibilidad();
     bool getAccesibilidad();
-    std::string setEstado();
-    std::string nuevoMantenimiento();
+    void setEstado(std::string nuevoEstado);
+    void nuevoMantenimiento();
     
 };
 #endif //POO_HABITACIONES_H
