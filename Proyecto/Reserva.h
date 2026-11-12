@@ -1,4 +1,4 @@
-  #ifndef POO_RESERVA_H
+#ifndef POO_RESERVA_H
 #define POO_RESERVA_H
 #include <string>
 
@@ -23,8 +23,8 @@ class Reserva {
   std::string finReserva;
   bool reservaGrupal;
 public:
-  Reserva(tipoDeGarantia tipG, estadoDeReserva estR, int numR, int docH, int idH, std::string start, std:: string end, 
-  bool reservaG);
+  Reserva(tipoDeGarantia tipG, estadoDeReserva estR, int numR, int docH, int idH, 
+  std::string start, std:: string end, bool reservaG);
   tipoDeGarantia TipoDeGarantia();
   estadoDeReserva EstadoR();
   int NumReserva();
@@ -32,6 +32,10 @@ public:
   int IdHabitacion();
   std::string InicioReserva();
   std::string FinReserva();
+  void cambiarFechas( std::string start, std:: string end);
+  void cancelarReserva();
+  void aplicarNoShow();
+  void quitarNoShow();
   bool ReservaGrupal();
 };
 #endif //POO_RESERVA_H
