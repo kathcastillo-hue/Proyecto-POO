@@ -22,13 +22,12 @@ using namespace std;
   }
   void Reserva::aplicarNoShow(){
     if(estadoR==Confirmada){
-      estadoR==NoShow;
+      estadoR=NoShow;
     }
   }
   void Reserva::quitarNoShow(bool causaJust){
     if(estadoR==NoShow && causaJust){
-      estadoR==Confirmada;
-      return true;
+      estadoR=Confirmada;
     }
   }
   bool Reserva::ReservaGrupal(){return reservaGrupal;}
