@@ -3,14 +3,23 @@
 #include "Huesped.h"
 using namespace std;
 
-
   Huesped::Huesped(claseDeCliente c, int id, std::string name, int punto): cliente(c),
   identificacion(id), nombre(name), puntos(punto){}
   claseDeCliente Huesped::getClaseDeCliente(){ return cliente;}
   int Huesped:: getIdentificacion(){return identificacion;}
+  string getNombre(){return nombre;}
+  int getPuntos(){return puntos;}
   void Huesped:: añadirPuntos(int puntos){
-    this->puntos+=puntos;
+    if(puntos>0){
+      this->puntos+=puntos;
+    } else{
+      cout<<"Cantidad invalida";
+    }
   }
   void Huesped:: quitarPuntos(int puntos){
+    if (puntos>0){
         this->puntos-=puntos;
+    }else{
+      cout<<"Cantidad invalida";
+    }
   }
