@@ -2,6 +2,7 @@
 #ifndef POO_HABITACIONES_H
 #define POO_HABITACIONES_H
 #include <string>
+
 class Habitaciones{
 private:
     std::string estado; //Disponible, ocupada, limpieza o mantenimiento
@@ -21,6 +22,9 @@ public:
     std::string getTipo();
     std::string getVista();
     bool Disponibilidad();
-
+    bool getAccesibilidad();
+    string setEstado();
+    string nuevoMantenimiento();
+    
 };
 #endif //POO_HABITACIONES_H
