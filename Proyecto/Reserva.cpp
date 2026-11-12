@@ -13,5 +13,18 @@ using namespace std;
   int Reserva::IdHabitacion(){return idHabitacion;}
   string Reserva::InicioReserva(){return inicioReserva; }
   string Reserva::FinReserva(){return finReserva;}
+  void Reserva:: cambiarFechas(string start, string end){
+    this->start=start;
+    this->end=end;
+  }
+  void estadoDeReserva Reserva::cancelarReserva(){
+  estadoR="Cancelada";
+  }
+  void estadoDeReserva Reserva::aplicarNoShow(){
+    
+  }
+  void estadoDeReserva Reserva::quitarNoShow(bool causaJust){
+    
+  }
   bool Reserva::ReservaGrupal(){return reservaGrupal;}
 
