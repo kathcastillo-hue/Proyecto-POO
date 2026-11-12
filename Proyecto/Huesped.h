@@ -17,6 +17,8 @@ public:
   Huesped(claseDeCliente c, int id, std::string name, int punto);
   claseDeCliente getClaseDeCliente();
   int getIdentificacion();
+  std:: getNombre();
+  int getPuntos();
   void añadirPuntos(int puntos);
   void quitarPuntos(int puntos);
 };
