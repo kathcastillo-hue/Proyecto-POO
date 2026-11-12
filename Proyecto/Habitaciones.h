@@ -3,9 +3,16 @@
 #define POO_HABITACIONES_H
 #include <string>
 
+enum EstadoHabitacion{
+    Disponible,
+    Ocupada,
+    Limpieza,
+    Mantenimiento,
+};
+
 class Habitaciones{
 private:
-    std::string estado; //Disponible, ocupada, limpieza o mantenimiento
+    EstadoHabitacion estado;
     int idHabitacion;
     int cantidad;//# Habitaciones
     int capacidad; //Capacidad de personas por habitación
@@ -13,9 +20,9 @@ private:
     std::string vista; //Vista de la habitación (mar, ciudad, selva)
     bool accesibilidad; //¿Apta para personas con movilidad reducida?
 public:
-    Habitaciones(std::string est, int id, int cant, int cap, std::string tip, 
+    Habitaciones(EstadoHabitacion est, int id, int cant, int cap, std::string tip, 
     std::string view, bool acces);
-    std::string getEstado();
+    EstadoHabitacion getEstado();
     int getId();
     int getCantidad();
     int getCapacidad();
@@ -23,7 +30,7 @@ public:
     std::string getVista();
     bool Disponibilidad();
     bool getAccesibilidad();
-    void setEstado(std::string nuevoEstado);
+    void setEstado(EstadoHabitacion nuevoEstado);
     void nuevoMantenimiento();
     
 };
