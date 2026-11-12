@@ -9,8 +9,8 @@ using namespace std;
   claseDeCliente Huesped::getClaseDeCliente(){ return cliente;}
   int Huesped:: getIdentificacion(){return identificacion;}
   void Huesped:: añadirPuntos(int puntos){
-    this->puntos=puntos;
+    this->puntos+=puntos;
   }
   void Huesped:: quitarPuntos(int puntos){
-        this->puntos=puntos;
+        this->puntos-=puntos;
   }
