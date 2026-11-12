@@ -17,7 +17,7 @@ using namespace std;
     }
   }
   void Huesped:: quitarPuntos(int puntos){
-    if (puntos>0 && puntos>=this->puntos){
+    if (puntos>0 && puntos<=this->puntos){
         this->puntos-=puntos;
     }else{
       cout<<"Cantidad invalida";
