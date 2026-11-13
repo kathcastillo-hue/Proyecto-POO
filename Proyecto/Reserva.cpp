@@ -14,11 +14,15 @@ using namespace std;
   string Reserva::InicioReserva(){return inicioReserva; }
   string Reserva::FinReserva(){return finReserva;}
   void Reserva:: cambiarFechas(string start, string end){
-    this->inicioReserva=start;
-    this->finReserva=end;
-  }//Hacer un condicional para que no deje agendar antes del día actual
+    if (estadoR==Confirmada && start<end && start>->this start){
+      this->inicioReserva=start;
+      this->finReserva=end;
+    }
+  }
   void Reserva::cancelarReserva(){
-  estadoR=Cancelada;
+    if (estadoR==Confirmada){
+      estadoR=Cancelada;
+    }
   }
   void Reserva::aplicarNoShow(){
     if(estadoR==Confirmada){
@@ -33,7 +37,7 @@ using namespace std;
   bool Reserva::ReservaGrupal(){return reservaGrupal;}
 
   /*int main(){
-  Reserva reserva(Tarjeta, 1, 100, 12, "2026-11-10", "2026-11-15", true);
+  Reserva reserva(Tarjeta, Confirmada, 1, 100, 12, "2026-11-10", "2026-11-15", true);
    return 0; 
   }*/
 
