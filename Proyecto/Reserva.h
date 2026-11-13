@@ -32,7 +32,7 @@ public:
   int IdHabitacion();
   std::string InicioReserva();
   std::string FinReserva();
-  void cambiarFechas( std::string start, std:: string end);
+  void cambiarFechas( std::string start, std:: string end, std::string hoy);
   void cancelarReserva();
   void aplicarNoShow();
   void quitarNoShow(bool causaJust);
