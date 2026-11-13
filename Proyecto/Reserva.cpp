@@ -14,7 +14,7 @@ using namespace std;
   string Reserva::InicioReserva(){return inicioReserva; }
   string Reserva::FinReserva(){return finReserva;}
   void Reserva:: cambiarFechas(string start, string end){
-    if (estadoR==Confirmada && start<end && start>->this start){
+    if (estadoR==Confirmada && start<end && start>this->inicioReserva){
       this->inicioReserva=start;
       this->finReserva=end;
     }
