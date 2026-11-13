@@ -1,20 +1,23 @@
 #ifndef POO_GESTIONHOTEL_H
 #define POO_GESTIONHOTEL_H
 #include <string>
+#include "Habitaciones.h"
+#include "Reserva.h"
 
 class GestionHotel{
-  const int HabitacionesMax=10;
-  const int ReservasMax=5;
+  static const int HabitacionesMax=10;
+  static const int ReservasMax=5;
   Habitaciones habitaciones[HabitacionesMax];
-  Reservas reservas[ReservasMax];
+  Reserva reservas[ReservasMax];
   int numeroHab;
   int numeroRes;
 public:
   GestionHotel();
-  bool HabitacionOcupada(Habitaciones hab);
-  bool CruceHabitacion(int idHab, std::fechaI, std::fechaF);
+  bool NuevaHabitacion(Habitaciones hab);
+  bool CruceHabitacion(int idHab, std::string fechaI, std::string fechaF);
   bool NuevaReserva(Reserva Nreserva);
-  bool consultarDisponibilidad(std::string conDispInicio, std::string conDispFin);
+  void consultarDisponibilidad(std::string tipo, std::string conDispInicio, 
+  std::string conDispFin);
   bool cancelarReserva(int numReserva);
 };
 
