@@ -37,7 +37,8 @@ using namespace std;
   bool Reserva::ReservaGrupal(){return reservaGrupal;}
 
   /*int main(){
-  Reserva reserva(Tarjeta, Confirmada, 1, 100, 12, "2026-11-10", "2026-11-15", "2025-11-10", true);
+  Reserva reserva(Tarjeta, Confirmada, 1, 100, 12, "2026-11-10", "2026-11-15", true);
+  reserva.cambiarFechas("2026-11-07", "2026-11-15","2026-11-10")
    return 0; 
   }*/
 
