@@ -2,7 +2,8 @@
 #include "Habitaciones.h"
 using namespace std;
 
-    Habitaciones::Habitaciones();
+    Habitaciones::Habitaciones():estado(Disponible), idHabitacion(0), cantidad(0),
+  capacidad(0), tipo(""), vista(""), accesibilidad(false){}
     Habitaciones:: Habitaciones(EstadoHabitacion est, int id, int cant, int cap, string tip, 
     string view, bool acces):estado(est), idHabitacion(id), cantidad(cant), capacidad(cap), tipo(tip),
     vista(view), accesibilidad(acces){}
