@@ -13,8 +13,8 @@ using namespace std;
   int Reserva::IdHabitacion(){return idHabitacion;}
   string Reserva::InicioReserva(){return inicioReserva; }
   string Reserva::FinReserva(){return finReserva;}
-  void Reserva:: cambiarFechas(string start, string end){
-    if (estadoR==Confirmada && start<end && start>this->inicioReserva){
+  void Reserva:: cambiarFechas(string start, string end, string hoy){
+    if (estadoR==Confirmada && start<end && start>hoy){
       this->inicioReserva=start;
       this->finReserva=end;
     }
