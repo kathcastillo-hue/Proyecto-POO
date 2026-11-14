@@ -18,7 +18,7 @@ void CierreNocturno::ejecutarCierreNocturno(vector<Cuenta>& listaCuentas) {
         double subtotal = cuenta.getSaldoPendiente();
         ingresosTotalesConsolidados += subtotal;
 
-        // Se congela/bloquea la cuenta usando el método de tu clase Cuenta
+        // Se congela/bloquea la cuenta usando el mÃ©todo de tu clase Cuenta
         cuenta.bloquearFolio(); // (Nota: puedes renombrarlo a cuenta.bloquearCuenta() si gustas)
         cout << "Cuenta/Folio #" << cuenta.getIdCuenta() << " consolidado y BLOQUEADO. Subtotal: $" << subtotal << "\n";
     }
@@ -32,7 +32,7 @@ void CierreNocturno::ejecutarCierreNocturno(vector<Cuenta>& listaCuentas) {
 
 bool CierreNocturno::solicitarAjustePoscierre(Cuenta& cuenta, double monto, const string& motivo, const string& autorizador) {
     if (!cierreEjecutado) {
-        // Si aún no se ejecuta el cierre, el ajuste se aplica directamente
+        // Si aÃºn no se ejecuta el cierre, el ajuste se aplica directamente
         cuenta.aplicarAjuste(monto, motivo);
         return true;
     }
@@ -45,7 +45,7 @@ bool CierreNocturno::solicitarAjustePoscierre(Cuenta& cuenta, double monto, cons
     // Aplicar el ajuste en la cuenta bloqueada
     cuenta.aplicarAjuste(monto, motivo);
 
-    // Registrar detalladamente en la bitácora de auditoría exigida por el proyecto
+    // Registrar detalladamente en la bitÃ¡cora de auditorÃ­a exigida por el proyecto
     RegistroAjuste reg = { cuenta.getIdCuenta(), monto, motivo, autorizador, "2026-10-23 23:59" };
     bitacoraAuditoria.push_back(reg);
 
