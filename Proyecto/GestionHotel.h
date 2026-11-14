@@ -14,7 +14,7 @@ class GestionHotel{
 public:
   GestionHotel();
   bool NuevaHabitacion(Habitaciones hab);
-  bool CruceHabitacion(int idHab, std::string fechaI, std::string fechaF);
+  bool CruceHabitacion(int numHab, std::string fechaI, std::string fechaF);
   bool NuevaReserva(Reserva Nreserva);
   void consultarDisponibilidad(std::string tipo, std::string conDispInicio, 
   std::string conDispFin);
