@@ -16,7 +16,7 @@ using namespace std;
 
   bool GestionHotel::CruceHabitacion(int numHab, string fechaI, string fechaF){
     for(int i=0; i<numeroRes; i++){
-      if (reservas[i].idHabitacion()==numHab && reservas[i].EstadoR()==Confirmada){
+      if (reservas[i].IdHabitacion()==numHab && reservas[i].EstadoR()==Confirmada){
         if(fechaI<reservas[i].FinReserva() && reservas[i].InicioReserva()<fechaF){
         return true;
         }
@@ -30,7 +30,7 @@ using namespace std;
       cout<<"Sin espacio"<<'\n';
       return false;
     }    
-    if(Nreserva.InicioReserva()>Nreserva.FinReserva()){
+    if(!(Nreserva.InicioReserva()<Nreserva.FinReserva())){
       cout<<"Fecha invalida"<<'\n';
       return false;
     }
@@ -40,16 +40,17 @@ using namespace std;
           cout<<"Habitacion en mantenimiento"<<'\n';
           return false;
         }
-        if (CruceHabitacion Nreserva.IdHabitacion(), Nreserva.InicioReserva(), Nreserva.FinReserva()){
+        if (CruceHabitacion (Nreserva.IdHabitacion(), Nreserva.InicioReserva(), Nreserva.FinReserva())){
           cout<<"Ya esta reservada"<<'\n';
           return false;
         }
-    reserva[numeroRes]=Nreserva;
+    reservas[numeroRes]=Nreserva;
     numeroRes++;
     return true;
     }
   }
   cout<<"Habitacion inexistente"<<'\n';
+  return false;
   }
 
   void GestionHotel::consultarDisponibilidad(string tipo, string conDispInicio, 
