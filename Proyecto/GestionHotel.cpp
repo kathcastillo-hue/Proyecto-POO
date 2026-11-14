@@ -16,9 +16,10 @@ using namespace std;
 
   bool GestionHotel::CruceHabitacion(int numHab, string fechaI, string fechaF){
     for(int i=0; i<numeroRes; i++){
-      if (reserva[i].idHabitacion()==idHab && reservas[i].EstadoR()==Confirmada){
+      if (reservas[i].idHabitacion()==numHab && reservas[i].EstadoR()==Confirmada){
         if(fechaI<reservas[i].FinReserva() && reservas[i].InicioReserva()<fechaF){
         return true;
+        }
       }
     }
       return false; 
