@@ -2,6 +2,8 @@
 #include "Reserva.h"
 using namespace std;
 
+  Reserva::Reserva():tipoG(Deposito), estadoR(Cancelada), numReserva(0), docHuesped(0),
+  idHabitacion(0), inicioReserva(""), finReserva(""), reservaGrupal(false){}
   Reserva::Reserva(tipoDeGarantia tipG, estadoDeReserva estR, int numR, int docH, 
   int idH, string start, string end, bool reservaG):tipoG(tipG), estadoR(estR), 
   numReserva(numR), docHuesped(docH), idHabitacion(idH), inicioReserva(start), 
