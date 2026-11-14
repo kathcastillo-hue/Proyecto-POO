@@ -63,5 +63,11 @@ using namespace std;
   }
 
  bool GestionHotel::cancelarReserva(int numReserva){
-   
+   for (int i=0; i<numeroRes; i++){
+     if (reservas[i].NumReserva()==numReserva){
+       reservas[i].cancelarReserva();
+       return true;
+     }
+  }
+  return false;
  }
