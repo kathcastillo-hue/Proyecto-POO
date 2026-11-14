@@ -23,6 +23,7 @@ class Reserva {
   std::string finReserva;
   bool reservaGrupal;
 public:
+  Reserva();
   Reserva(tipoDeGarantia tipG, estadoDeReserva estR, int numR, int docH, int idH, 
   std::string start, std:: string end, bool reservaG);
   tipoDeGarantia TipoDeGarantia();
